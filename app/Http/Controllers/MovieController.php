@@ -10,6 +10,7 @@ use App\Movie;
 class MovieController extends Controller
 {
     public function index() {
-        return "Bella cumpà";
+        $movies = Movie::all();
+        dd($movies);
     }
 }
